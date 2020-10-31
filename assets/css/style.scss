@@ -1,0 +1,59 @@
+--- 
+--- 
+@import "{{ site.theme }}";
+
+$meta-color: #828282 !default;
+$spacing-unit: 30px !default;
+$base-font-size: 16px !default;
+$small-font-size: $base-font-size * 0.875 !default;
+
+$content-width: 800px !default;
+
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+$on-medium: $on-palm !default;
+$on-large: $on-laptop !default;
+
+@mixin relative-font-size($ratio) {
+    font-size: #{$ratio}rem;
+}
+
+.post-list {
+    margin-left: 0;
+    // list-style: none;
+
+    >li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $meta-color;
+}
+
+.post-name {
+    display: block;
+    margin-top: 0px;
+}
+
+.post-link {
+    @include relative-font-size(1.5);
+}
+
+a.twitter {
+    background: url(../images/twitter.png) no-repeat 1px;
+}
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    padding: 0px 3px 2px 0px;
+    vertical-align: text-bottom;
+}
+
+a:hover {
+    text-decoration: none;
+}

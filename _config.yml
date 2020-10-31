@@ -21,15 +21,23 @@
 title: KLM Loves Mango
 email: ngockhanh5794@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Right now it's just an empty site. I dont know what to put in here yet. Will probably come up with something
-  later.
+  Hey, My name is Khanh. You can call me Kyle. I'll code for fried chicken wings.Right now this is just an empty site.
+  I dont know what to put in here yet. Will probably come up with something later.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mangeption
-github_username:  kyle5794
+social:
+  twitter:
+    handle: mangeption
+    display: mangeption
+  github:
+    handle: kyle5794
+    display: kyle5794
+  linkedin: 
+    handle: ngoc-khanh-nguyen-8741b5108
+    display: Ngoc Khanh
 
 # Build settings
-theme: minima
+theme: jekyll-theme-dinky
 plugins:
   - jekyll-feed
 
